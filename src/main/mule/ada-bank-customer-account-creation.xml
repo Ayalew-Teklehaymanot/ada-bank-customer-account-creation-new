@@ -212,6 +212,7 @@ output application/json
 				</ee:transform>
 			</when>
 			<otherwise >
+				<logger level="INFO" doc:name="Before Data Insertion" doc:id="25a97a4e-9733-4cc2-ac12-d989607a229a" message="--------- Before Data Insertion-----------"/>
 				<snowflake:insert doc:name="Insert" doc:id="ccf98f64-8163-4aa8-a8ed-15bc16bb2418" config-ref="Snowflake_Config" >
 					<snowflake:sql ><![CDATA[insert into bank(custName,custAccNum,atmPin,bankName,accountType,ifscCode,branchName,transactiontimeStamp,mailId,phoneNumber)
 
