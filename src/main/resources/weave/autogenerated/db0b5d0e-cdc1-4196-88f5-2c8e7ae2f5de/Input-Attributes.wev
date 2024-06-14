@@ -1,0 +1,4 @@
+%dw 2.0
+
+type auto_db0b5d0e_cdc1_4196_88f5_2c8e7ae2f5de_Input_Attributes = Null
+
